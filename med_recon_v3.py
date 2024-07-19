@@ -16,8 +16,7 @@ if 'output_text' not in st.session_state:
 user_input = st.text_area("Enter or paste the text input here:")
 
 # File path for medication list
-current_dir = os.path.dirname(os.path.realpath(__file__))
-med_list_file_path = os.path.join(current_dir, 'medication list.xlsx')
+med_list_file_path = 'medication list.xlsx'
 
 # Add an "Analyze" button
 if st.button("Analyze"):
